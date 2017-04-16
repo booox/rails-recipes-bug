@@ -15,3 +15,6 @@ module RailsRecipes
     config.time_zone = "Beijing"
   end
 end
+
+
+Time::DATE_FORMATS.merge!( default: '%Y/%m/%d %I:%M %p', ymd: '%Y/%m/%d')
