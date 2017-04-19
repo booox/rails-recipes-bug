@@ -18,7 +18,7 @@ class Admin::EventsController < AdminController
     if @event.save
       redirect_to admin_events_path
     else
-      render "new"
+      render :new
     end
   end
 
@@ -30,7 +30,7 @@ class Admin::EventsController < AdminController
     if @event.update(event_params)
       redirect_to admin_events_path
     else
-      render "edit"
+      render :edit
     end
   end
 
@@ -50,10 +50,7 @@ class Admin::EventsController < AdminController
   protected
 
   def event_params
-    params.require(:event).permit(:name, :description, :friendly_id)
+    params.require(:event).permit(:name, :description, :friendly_id, :status)
   end
-
-
-
 
 end

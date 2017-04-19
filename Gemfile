@@ -1,4 +1,5 @@
-source 'https://rubygems.org'
+source 'https://gems.ruby-china.org'
+# source 'https://rubygems.org'
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
@@ -14,6 +15,7 @@ gem 'bootstrap-sass'
 gem 'devise'
 gem 'rails-i18n'
 gem 'devise-i18n'
+gem 'awesome_rails_console'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
