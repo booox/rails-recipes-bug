@@ -1,5 +1,10 @@
 "zh-CN":
   event_list: 活動列表
+  event:
+    status:
+      draft: 草稿
+      public:  公开
+      private: 私密
   admin:
     name: "活動名稱"
     description: "描述"
