@@ -15,3 +15,4 @@
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require select2
+//= require nested_form_fields
